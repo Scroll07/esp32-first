@@ -4,7 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "esptool>=5.5.0",
+    "micropython-esp32-stubs>=1.29.0.post1",
+    "mpremote>=1.29.0",
+]
 
 [project.scripts]
 first = "first:main"
