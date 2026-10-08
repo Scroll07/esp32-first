@@ -233,7 +233,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/6a/c8/15a0d5a80a81d7a33
 [[package]]
 name = "first"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "esptool" },
     { name = "micropython-esp32-stubs" },
