@@ -1,5 +1,6 @@
 import network
 import time
+import gc
 
 from config import (
     WIFI_SSID,
@@ -8,6 +9,10 @@ from config import (
 
 def connect_wlan() -> bool:
     wlan = network.WLAN(network.STA_IF)
+    
+    wlan.active(False)
+    time.sleep(0.5)
+    gc.collect()    
     wlan.active(True)
 
     print(f'Connecting to: {WIFI_SSID}')
