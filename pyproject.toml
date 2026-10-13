@@ -9,4 +9,5 @@ dependencies = [
     "microdot>=2.7.0",
     "micropython-esp32-stubs>=1.29.0.post1",
     "mpremote>=1.29.0",
+    "requests>=2.34.2",
 ]
